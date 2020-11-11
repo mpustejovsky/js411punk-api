@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.fa {
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sub_area {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black; 
+}
+.beer_List {
+  border-style: solid;
+  border-width: 2px;
+  border-color: maroon;
+  width: 100%;
+}
+
+.beer_List button{
+  background-color: rgb(255, 17, 0);
+  margin-right: 30px;
+}
+.fa:hover {
+  color: darkblue;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#top {
+  grid-area: topA;
+}
+#left {
+  grid-area: leftA;
+  display: block;
+  flex-direction: column;
+  align-items: left;
+  align-items: center;
+  justify-content: center;
+}
+
+#right {
+  grid-area: rightA;
+  display: block;
+  align-items: left;
+  align-items: top;
+  text-align: initial;
+  padding-left: 12px;
+  
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  'topA topA'
+  'leftA rightA';
+
+}
+.App-header {
+  background-color: #282c34;
+ height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
